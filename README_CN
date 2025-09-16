@@ -1,0 +1,82 @@
+
+# E-Chat
+[中文](README_CN) | [English](README)
+
+---
+
+一个基于电子邮件协议的即时通讯软件
+
+## 项目简介
+
+E-Chat是一个邮件即时通讯客户端,通过SMTP/IMAP协议实现实时通讯功能.软件采用现代化的界面设计,提供流畅的聊天体验.
+
+
+## 安装要求
+
+- Python 3.8 或更高版本
+- Windows/macOS/Linux
+
+## 安装说明
+
+1. 克隆项目到本地
+```bash
+git clone <repository-url>
+cd E-Chat
+```
+
+2. 安装依赖包
+```bash
+pip install -r requirements.txt
+```
+
+3. 运行程序
+```bash
+python main.py
+```
+
+## 项目结构
+
+```
+E-Chat/
+├── main.py              # 程序入口
+├── requirements.txt     # 依赖包列表
+├── src/                 # 核心源代码
+│   ├── app.py          # 主应用类
+│   ├── config_manager.py    # 配置管理
+│   ├── database_manager.py  # 数据库管理
+│   ├── email_manager.py     # 邮件收发管理
+│   ├── language_manager.py  # 多语言管理
+│   ├── message_parser.py    # 消息解析
+│   └── utils.py            # 工具函数
+└─── ui/                  # 用户界面
+    ├── main_window.py      # 主窗口
+    ├── chat_interface.py   # 聊天界面
+    ├── chat_list.py        # 联系人列表
+    ├── sidebar.py          # 侧边栏
+    ├── settings_window.py  # 设置窗口
+    └── components/         # UI组件
+```
+
+## 使用说明
+
+1. **首次配置**: 启动程序后,在设置中配置邮件服务器信息
+2. **添加联系人**: 通过侧边栏添加聊天联系人
+3. **发送消息**: 在聊天界面输入消息并发送
+4. **接收消息**: 程序会自动轮询接收新消息
+
+## 配置要求
+
+需要配置以下邮件服务器信息：
+- SMTP服务器地址和端口
+- IMAP服务器地址和端口
+- 邮箱账号和密码 (一些邮箱可能需要使用授权码)
+
+
+## 许可证
+
+本项目采用MIT许可证开源.详见[LICENSE](LICENSE)文件.
+
+
+## 版本历史
+
+- **v1.0.0** - 初始版本,基础聊天功能实现 
