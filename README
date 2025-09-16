@@ -18,7 +18,7 @@ E-Chat is an email instant messaging client that implements real-time communicat
 
 1. Clone the project to local
 ```bash
-git clone <repository-url>
+git clone https://github.com/koabula/E-Chat.git
 cd E-Chat
 ```
 
