@@ -1,5 +1,5 @@
 # E-Chat
-[中文](README_CN.md) | [English](README)
+[中文](README_CN.md) | [English](README.md)
 
 ---
 
